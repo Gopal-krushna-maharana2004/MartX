@@ -11,12 +11,19 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). To create and run a production build:
+Open [http://localhost:3000](http://localhost:3000). To create the static production build:
 
 ```bash
 npm run build
-npm start
 ```
+
+The generated site is in `out/`.
+
+### Deploy to Render as a Static Site
+
+- **Root Directory:** leave the field empty so Render builds from the repository root. Do not enter the words `Leave blank`.
+- **Build Command:** `npm install && npm run build`
+- **Publish Directory:** `out`
 
 ## Demo access
 

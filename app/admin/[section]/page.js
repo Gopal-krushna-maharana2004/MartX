@@ -1,5 +1,14 @@
-'use client';
-import {use} from 'react';
 import AppFrame from '../../../components/AppFrame';
 import Workbench from '../../../components/Workbench';
-export default function AdminSection({params}){const {section}=use(params);return <AppFrame><Workbench section={section}/></AppFrame>}
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return ['employees','departments','tasks','projects','attendance','responsibilities','announcements','company']
+    .map(section => ({section}));
+}
+
+export default async function AdminSection({params}) {
+  const {section} = await params;
+  return <AppFrame><Workbench section={section}/></AppFrame>;
+}
