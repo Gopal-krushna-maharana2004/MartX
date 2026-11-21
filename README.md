@@ -1,6 +1,6 @@
 # MartX Company Workspace
 
-A frontend-only company management demo built with Next.js App Router, React, Tailwind CSS, Recharts, and Lucide React. The browser's LocalStorage is the single source of truth for company data; sessionStorage holds the current demo login session. No database, API service, or separate backend is used.
+MartX is a modern, responsive company management dashboard built with Next.js, featuring separate Admin and Employee portals, role-based navigation, dynamic management tools, interactive analytics, and browser LocalStorage persistence. This frontend-only demo uses Next.js App Router, React, Tailwind CSS, Recharts, and Lucide React; it has no database, external API, or separate backend.
 
 ## Run locally
 
